@@ -175,11 +175,21 @@ Error message and password prompt
 
 <li>$:/state/tab/sidebar--595412856</li>
 
+<li>$:/state/tag-manager/prodmgmt</li>
+
+<li>$:/state/toc/toc-prodmgmt-1367091134</li>
+
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
 
+<li>$:/TagManager</li>
+
 <li>$:/temp/info-plugin</li>
+
+<li>$:/temp/NewTagName</li>
+
+<li>$:/temp/search</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
@@ -191,9 +201,19 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
 
-<li>Digital Gardens</li>
+<li>meta</li>
 
-<li>Start here</li>
+<li>my public digital garden</li>
+
+<li>now</li>
+
+<li>PM resources</li>
+
+<li>prodmgmt</li>
+
+<li>start here</li>
+
+<li>the collector's fallacy</li>
 
 <li>working with the garage door up</li>
 
@@ -9595,19 +9615,19 @@ Error message and password prompt
 <div created="20200825173235235" modified="20200825173238544" title="$:/GitHub/Filename">
 <pre>index.html</pre>
 </div>
-<div created="20200825173219439" modified="20200826061403768" title="$:/GitHub/Repo">
+<div created="20200825173219439" modified="20200826155422548" title="$:/GitHub/Repo">
 <pre></pre>
 </div>
-<div created="20200825173157100" modified="20200826061401390" title="$:/GitHub/Username">
+<div created="20200825173157100" modified="20200826155418682" title="$:/GitHub/Username">
 <pre></pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20200825173849330" modified="20200825173849330" title="$:/palette">
+<div created="20200825173849330" modified="20200826101004982" title="$:/palette">
 <pre>$:/palettes/ContrastDark</pre>
 </div>
-<div created="20200825173951156" description="High contrast and unambiguous (dark version)" modified="20200825174239134" name="Contrast (Dark)" tags="$:/tags/Palette" title="$:/palettes/ContrastDark" type="application/x-tiddler-dictionary">
+<div created="20200825173951156" description="High contrast and unambiguous (dark version)" modified="20200826101026273" name="Contrast (Dark)" tags="$:/tags/Palette" title="$:/palettes/ContrastDark" type="application/x-tiddler-dictionary">
 <pre>alert-background: #f00
 alert-border: &lt;&lt;colour background&gt;&gt;
 alert-highlight: &lt;&lt;colour foreground&gt;&gt;
@@ -9653,8 +9673,8 @@ page-background: &lt;&lt;colour background&gt;&gt;
 pre-background: &lt;&lt;colour background&gt;&gt;
 pre-border: &lt;&lt;colour foreground&gt;&gt;
 primary: #FD81CD
-select-tag-background: 
-select-tag-foreground: 
+select-tag-background: &lt;&lt;colour foreground&gt;&gt;
+select-tag-foreground: &lt;&lt;colour foreground&gt;&gt;
 sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
 sidebar-controls-foreground-hover: &lt;&lt;colour background&gt;&gt;
 sidebar-controls-foreground: &lt;&lt;colour foreground&gt;&gt;
@@ -9726,23 +9746,119 @@ very-muted-foreground: #888888</pre>
 <div created="20200825175019535" modified="20200825175637626" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20200825173846958" modified="20200825174304078" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20200825173846958" modified="20200826100748023" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20200825173049141" modified="20200825175137714" title="$:/state/tab-1749438307">
+<div created="20200825173049141" modified="20200826154845116" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200825173050396" modified="20200825175454633" title="$:/state/tab-2065006209">
+<div created="20200825173050396" modified="20200826154854643" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200825173044254" modified="20200825173713656" title="$:/state/tab/sidebar--595412856">
+<div created="20200825173044254" modified="20200827143901901" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20200826100922747" modified="20200826100922747" title="$:/state/tag-manager/prodmgmt">
+<pre>open</pre>
+</div>
+<div created="20200826102229330" modified="20200826102346426" title="$:/state/toc/toc-prodmgmt-1367091134">
+<pre>close</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200826061510618" list="[[Start here]]" modified="20200826061535152" title="$:/StoryList">
+<div created="20200827140640201" list="[[my public digital garden]]" modified="20200827144302423" title="$:/StoryList">
 <pre></pre>
+</div>
+<div color="#bbb" created="20200826100716536" icon="$:/core/images/tag-button" modified="20200826100716536" title="$:/TagManager">
+<pre>\define lingo-base() $:/language/TagManager/
+\define iconEditorTab(type)
+\whitespace trim
+&lt;$link to=&quot;&quot;&gt;&lt;&lt;lingo Icons/None&gt;&gt;&lt;/$link&gt;
+&lt;$list filter=&quot;[all[shadows+tiddlers]is[image]] [all[shadows+tiddlers]tag[$:/tags/Image]] -[type[application/pdf]] +[sort[title]] +[$type$is[system]]&quot;&gt;
+&lt;$link to={{!!title}}&gt;
+&lt;$transclude/&gt; &lt;$view field=&quot;title&quot;/&gt;
+&lt;/$link&gt;
+&lt;/$list&gt;
+\end
+\define iconEditor(title)
+\whitespace trim
+&lt;div class=&quot;tc-drop-down-wrapper&quot;&gt;
+&lt;$button popupTitle={{{ [[$:/state/popup/icon/]addsuffix&lt;__title__&gt;] }}} class=&quot;tc-btn-invisible tc-btn-dropdown&quot;&gt;{{$:/core/images/down-arrow}}&lt;/$button&gt;
+&lt;$reveal stateTitle={{{ [[$:/state/popup/icon/]addsuffix&lt;__title__&gt;] }}} type=&quot;popup&quot; position=&quot;belowleft&quot; text=&quot;&quot; default=&quot;&quot;&gt;
+&lt;div class=&quot;tc-drop-down&quot;&gt;
+&lt;$linkcatcher actions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&lt;&lt;__title__&gt;&gt; icon=&lt;&lt;navigateTo&gt;&gt;/&gt;&quot;&quot;&quot;&gt;
+&lt;&lt;iconEditorTab type:&quot;!&quot;&gt;&gt;
+&lt;hr/&gt;
+&lt;&lt;iconEditorTab type:&quot;&quot;&gt;&gt;
+&lt;/$linkcatcher&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+&lt;/div&gt;
+\end
+\define toggleButton(state)
+\whitespace trim
+&lt;$reveal stateTitle=&lt;&lt;__state__&gt;&gt; type=&quot;match&quot; text=&quot;closed&quot; default=&quot;closed&quot;&gt;
+&lt;$button setTitle=&lt;&lt;__state__&gt;&gt; setTo=&quot;open&quot; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; selectedClass=&quot;tc-selected&quot;&gt;
+{{$:/core/images/info-button}}
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal stateTitle=&lt;&lt;__state__&gt;&gt; type=&quot;match&quot; text=&quot;open&quot; default=&quot;closed&quot;&gt;
+&lt;$button setTitle=&lt;&lt;__state__&gt;&gt; setTo=&quot;closed&quot; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; selectedClass=&quot;tc-selected&quot;&gt;
+{{$:/core/images/info-button}}
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+\end
+\whitespace trim
+&lt;table class=&quot;tc-tag-manager-table&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;&lt;lingo Colour/Heading&gt;&gt;&lt;/th&gt;
+&lt;th class=&quot;tc-tag-manager-tag&quot;&gt;&lt;&lt;lingo Tag/Heading&gt;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;&lt;lingo Count/Heading&gt;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;&lt;lingo Icon/Heading&gt;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;&lt;lingo Info/Heading&gt;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;$list filter=&quot;[tags[]!is[system]sort[title]]&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$edit-text field=&quot;color&quot; tag=&quot;input&quot; type=&quot;color&quot;/&gt;&lt;/td&gt;
+&lt;td&gt;{{||$:/core/ui/TagTemplate}}&lt;/td&gt;
+&lt;td&gt;&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;$macrocall $name=&quot;iconEditor&quot; title={{!!title}}/&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;$macrocall $name=&quot;toggleButton&quot; state={{{ [[$:/state/tag-manager/]addsuffix&lt;currentTiddler&gt;] }}} /&gt; 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td colspan=&quot;4&quot;&gt;
+&lt;$reveal stateTitle={{{ [[$:/state/tag-manager/]addsuffix&lt;currentTiddler&gt;] }}} type=&quot;match&quot; text=&quot;open&quot; default=&quot;&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&lt;lingo Colour/Heading&gt;&gt;&lt;/td&gt;&lt;td&gt;&lt;$edit-text field=&quot;color&quot; tag=&quot;input&quot; type=&quot;text&quot; size=&quot;9&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&lt;lingo Icon/Heading&gt;&gt;&lt;/td&gt;&lt;td&gt;&lt;$edit-text field=&quot;icon&quot; tag=&quot;input&quot; size=&quot;45&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/$reveal&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;position:relative;&quot;&gt;
+{{$:/core/ui/UntaggedTemplate}}
+&lt;/td&gt;
+&lt;td&gt;
+&lt;small class=&quot;tc-menu-list-count&quot;&gt;&lt;$count filter=&quot;[untagged[]!is[system]] -[tags[]]&quot;/&gt;&lt;/small&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -9801,6 +9917,12 @@ very-muted-foreground: #888888</pre>
         }
     }
 }</pre>
+</div>
+<div created="20200826100634315" modified="20200827143707862" title="$:/temp/NewTagName">
+<pre></pre>
+</div>
+<div created="20200826100656552" modified="20200827144259345" title="$:/temp/search">
+<pre>digital garden</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -9920,14 +10042,21 @@ very-muted-foreground: #888888</pre>
 <div created="20200825174315578" modified="20200825174315578" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily">
 <pre>&quot;SFMono-Regular&quot;,Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace</pre>
 </div>
-<div created="20200825174509974" modified="20200825174524982" tags="" title="Digital Gardens">
-<pre>Digital gardens sit in the space between your private notes and your polished creative work. They're a place to plant and grow ideas, and work with the garage door up by building a public space to share your digital content. 
+<div color="#32cd32" created="20200827143110749" icon="$:/core/images/open-window" modified="20200827143835861" tags="TOC" title="meta" type="text/vnd.tiddlywiki">
+<pre></pre>
+</div>
+<div created="20200827143429338" modified="20200827144617644" tags="meta" title="my public digital garden">
+<pre>Welcome to my public digital garden. This whole site probably doesn't make a lot of sense if you've found your way here by accident, so here's a bit of context. 
 
-The idea is to take your personal notes and share them publicly in a linked interface (similar to Niklas Luhman's [[Zettelkasten method]]) so readers can follow your thoughts across different topics, ideas and concepts.  
+I've been capturing my thoughts and ideas in various note-taking tools for years, but I've never really put them to good use. I've been a victim of [[the collector's fallacy]] and have built up a huge archive of digital information that's gathering virtual dust. 
 
-By making your thoughts shareable, you reap the benefits of creative compounding and are also able to contribute to the growth of our collective online intelligence. 
+After reading about the [[Zettelkasten method]] and stumbling across Andy Matuschak's working notes, I decided to try and re-ignite my note-taking by building my own knowledge management system using the same ideas. I initially set up my slip box in Evernote, but I've decided to make it public via this Tiddlywiki-powered site. Why? Because I'm a firm believer in the value of [[working with the garage door up]] and inviting feedback into the creative process. 
 
-Some of my favourite examples of digital gardens: 
+The idea is to take my personal notes and share them publicly in a linked interface so readers can follow my thoughts across different topics, ideas and concepts.  
+
+By making my thoughts shareable, I'm hoping to reap the benefits of creative compounding and be able to contribute in a small way to the growth of our collective online intelligence. The notes on this site are living packets of value that I'm using to create other content, but if other people find them useful then that's okay too.
+
+Some of my favourite examples of digital gardens that I'm using for inspiration: 
 
 * [[https://notes.andymatuschak.org/]]
 * [[https://tomcritchlow.com/wiki/]]
@@ -9936,15 +10065,55 @@ Some of my favourite examples of digital gardens:
 * [[https://wiki.nikitavoloboev.xyz/]]
 * [[https://philosopher.life/]]
 * [[https://wiki.waifu.haus/]]
-* [[https://www.mentalnodes.com/]]</pre>
+* [[https://www.mentalnodes.com/]]
+</pre>
 </div>
-<div created="20200825174343438" modified="20200825174429090" tags="" title="Start here">
-<pre>Hi! I'm Toby Rogers. Welcome to my personal digital garden. This whole site probably doesn't make a lot of sense if you've found your way here by accident, so here's a bit of context. 
-I've been capturing my thoughts and ideas in various note-taking tools for years, but I've never really put them to good use. I've been a victim of the collector's fallacy and have built up a huge archive of digital information that's gathering virtual dust. 
+<div created="20200827142319765" modified="20200827143447727" tags="meta" title="now">
+<pre>Inspired by [[Derek Sivers' Now Pages idea|https://sive.rs/nowff]], here's a regularly updated log of what I'm currently up to:
 
-After reading about the [[Zettelkasten method]] and stumbling across Andy Matuschak's working notes, I decided to try and re-ignite my note-taking by building my own knowledge management system using the same ideas. I initially set up my slip box in Evernote, but I've decided to make it public via this Tiddlywiki-powered site. Why? Because I'm a firm believer in the value of [[working with the garage door up]] and inviting feedback into the creative process. 
+* Managing [[Pebble|https://www.mypebble.co.uk/]]'s portfolio of financial management products for schools, Multi-Academy Trusts and PTAs
+* Tweeting about product, strategy, creativity and innovation [[@tobiasrogers|https://twitter.com/tobiasrogers]]
+* Tending [[my public digital garden]]
 
-The notes on this site are living packets of value that I'm using to create other content, but if other people find them useful then that's okay too. </pre>
+''Reading''
+
+* The Black Swan by Nassim Nicholas Taleb
+* Only The Paranoid Survive by Andrew S. Grove
+
+''Thinking About''
+
+* The value of [[working with the garage door up]]
+* How to apply [[the OODA Loop]] to [[personal growth]] and development
+</pre>
+</div>
+<div created="20200826100608331" modified="20200826100733294" tags="prodmgmt" title="PM resources">
+<pre></pre>
+</div>
+<div color="#FFA500" created="20200826100926912" icon="" modified="20200827143342271" title="prodmgmt">
+<pre></pre>
+</div>
+<div created="20200825174343438" modified="20200827142809475" tags="meta" title="start here">
+<pre>Hi! I'm Toby. 
+
+I'm a product manager passionate about helping socially responsible organisations build innovative tech products.
+
+I want to prove you don't have to have a Silicon Valley background and a resume that includes giants like Facebook, Google and Amazon to create world-beating software.
+
+Even without the luxury of bottomless VC funding, entrepreneurs and product managers can disrupt the status quo with great ideas (if they go about it the right way).
+
+I've learned how to be a product manager by doing. I've made a ton of mistakes and I want to help others make sure they don't make the same ones.
+
+A diehard music fan, I used to freelance as a music journalist until I realised I’d never pay the mortgage with free CDs and gig tickets. I love horror movies and am still trying to build my definitive collection of video nasties, Italian schlockers and slasher films.
+
+I’ve been writing for the web since the early days of Blogger with posts about music, movies, productivity, customer experience, leadership, business strategy and entrepreneurship (and probably any other topic you can think of).
+
+I’m rapidly hurtling towards middle age but still stand at the front at gigs. I won’t turn into the bald fat man in the red BMW convertible.
+
+You can reach my via email at toby dot rogers (at hey dot com). Or find me on Twitter [[@tobiasrogers|https://twitter.com/tobiasrogers]] – my DMs are always open.
+</pre>
+</div>
+<div created="20200827143935180" modified="20200827143935180" title="the collector's fallacy">
+<pre></pre>
 </div>
 <div created="20200825174449498" modified="20200825174449500" title="working with the garage door up">
 <pre></pre>
