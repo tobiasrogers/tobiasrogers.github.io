@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/WikiParserRules/Inline/wikilink</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -207,7 +209,11 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
 
+<li>Books I recommend</li>
+
 <li>creative compounding</li>
+
+<li>mental models</li>
 
 <li>meta</li>
 
@@ -217,9 +223,9 @@ Error message and password prompt
 
 <li>personal growth</li>
 
-<li>PM resources</li>
-
 <li>prodmgmt</li>
+
+<li>Product management resources</li>
 
 <li>root</li>
 
@@ -250,6 +256,9 @@ Error message and password prompt
 </div>
 <div created="20201026135851068" modified="20201026135851068" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20201026165651818" modified="20201026165651818" title="$:/config/WikiParserRules/Inline/wikilink">
+<pre>disable</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9767,8 +9776,8 @@ very-muted-foreground: #888888</pre>
 <div created="20201026141659623" modified="20201026141659623" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20200825173049141" modified="20201026141716214" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200825173049141" modified="20201026165648815" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20200825173050396" modified="20200827155743205" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
@@ -9788,7 +9797,7 @@ very-muted-foreground: #888888</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201026142530015" list="root" modified="20201026142947773" title="$:/StoryList">
+<div created="20201026165725377" list="root [[Books I recommend]]" modified="20201026165725377" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20200826100716536" icon="$:/core/images/tag-button" modified="20200826100716536" title="$:/TagManager">
@@ -10063,13 +10072,31 @@ very-muted-foreground: #888888</pre>
 <div created="20200825174315578" modified="20200825174315578" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily">
 <pre>&quot;SFMono-Regular&quot;,Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace</pre>
 </div>
+<div created="20201026164618558" modified="20201026165707094" title="Books I recommend" type="text/vnd.tiddlywiki">
+<pre>A list of books I like to recommend on a variety of topics: 
+
+!! Work
+
+* [[The 7 Habits of Highly Effective People|https://www.goodreads.com/book/show/36072.The_7_Habits_of_Highly_Effective_People]] by Stephen R. Covey
+* [[Getting Things Done: The Art of Stress-free Productivity|https://www.goodreads.com/book/show/1633.Getting_Things_Done]] by David Allen
+* [[The Lean Startup|https://www.goodreads.com/book/show/10127019-the-lean-startup]] by Eric Ries
+* [[The 80 20 Principle: The Secret to Success by Achieving More with Less|https://www.goodreads.com/book/show/25138780-the-80-20-principle]] by Richard Koch
+* [[High Output Management|https://www.goodreads.com/book/show/324750.High_Output_Management]] by Andrew S. Grove
+* [[The Score Takes Care of Itself: My Philosophy of Leadership|https://www.goodreads.com/book/show/6342995-the-score-takes-care-of-itself]] by Bill Walsh 
+* [[The 4 Disciplines of Execution: Achieving Your Wildly Important Goals|https://www.goodreads.com/book/show/13260184-the-4-disciplines-of-execution]] by Chris McChesney, Sean Covey, Jim Huling
+* [[First, Break All the Rules: What the World's Greatest Managers Do Differently|https://www.goodreads.com/book/show/50937.First_Break_All_the_Rules]] by Marcus Buckingham, Curt Coffman
+* [[The One Minute Manager|https://www.goodreads.com/book/show/763362.The_One_Minute_Manager]] by Kenneth Blanchard, Spencer Johnson </pre>
+</div>
 <div created="20201026140737566" modified="20201026140737566" title="creative compounding">
+<pre></pre>
+</div>
+<div created="20201026154917206" modified="20201026154917206" title="mental models">
 <pre></pre>
 </div>
 <div color="#32cd32" created="20200827143110749" icon="$:/core/images/open-window" modified="20200827143835861" tags="TOC" title="meta" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20200827143429338" modified="20201026142946044" tags="meta" title="my digital garden" type="text/vnd.tiddlywiki">
+<div created="20200827143429338" modified="20201026155056496" tags="meta" title="my digital garden" type="text/vnd.tiddlywiki">
 <pre>This site is my public digital garden. It probably doesn't make a lot of sense if you've found your way here by accident, so here's a bit of context. 
 
 I've been capturing my thoughts and ideas in various note-taking tools for years, but I've never really put them to good use. I've been a victim of [[the collector's fallacy]] and have built up a huge archive of digital information that's gathering virtual dust. 
@@ -10096,6 +10123,7 @@ Some of my favourite examples of digital gardens that I'm using for inspiration:
 * [[https://philosopher.life/]]
 * [[https://wiki.waifu.haus/]]
 * [[https://www.mentalnodes.com/]]
+
 </pre>
 </div>
 <div created="20200827142319765" modified="20201026142653599" tags="meta" title="now">
@@ -10120,18 +10148,24 @@ Some of my favourite examples of digital gardens that I'm using for inspiration:
 <div created="20201026142704603" modified="20201026142704603" title="personal growth">
 <pre></pre>
 </div>
-<div created="20200826100608331" modified="20200826100733294" tags="prodmgmt" title="PM resources">
-<pre></pre>
-</div>
 <div color="#FFA500" created="20200826100926912" icon="" modified="20200827143342271" title="prodmgmt">
 <pre></pre>
 </div>
-<div created="20201026135308220" modified="20201026143120825" tags="meta" title="root" type="text/vnd.tiddlywiki">
+<div created="20200826100608331" modified="20201026154909822" tags="prodmgmt" title="Product management resources">
+<pre></pre>
+</div>
+<div created="20201026135308220" modified="20201026165753003" tags="meta" title="root" type="text/vnd.tiddlywiki">
 <pre>Hi! I'm Toby. 
 
 I'm a product manager passionate about helping socially responsible organisations build innovative tech products.
 
 This is [[my digital garden]]—an experiment in [[working with the garage door up]] and making my less-than-polished ideas public. 
+
+Some interesting places to jump in: 
+
+* [[Books I recommend]]
+* [[mental models]]
+* [[Product management resources]]
 
 Along with this site, I also share my thoughts on product, strategy, creativity and innovation on [[Twitter|https://twitter.com/tobiasrogers]] and (occasionally) publish articles and essays on my [[blog|https://blog.tobyrogers.pm]]. 
 
